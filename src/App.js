@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+
+import ThankYouPage from './components/ThankYouPage';
+import ContinuePage from './components/ContinuePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <form>
-          <label>
-              Name:
-              <input type="text" name="name" />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-      </header>
-    </div>
+      <div className="App">
+        
+          <ContinuePage></ContinuePage>
+          <ThankYouPage></ThankYouPage>
+        
+      </div>
   );
 }
 
