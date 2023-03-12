@@ -1,15 +1,15 @@
 import './App.css';
 
-import ThankYouPage from './components/ThankYouPage';
 import ContinuePage from './components/ContinuePage';
 
-function App() {
+function App({updated}) {
+  
   return (
+      
       <div className="App">
         
           <ContinuePage></ContinuePage>
-          <ThankYouPage></ThankYouPage>
-        
+          <div>{ updated ? console.log(updated) : null }</div>
       </div>
   );
 }

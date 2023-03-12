@@ -2,8 +2,9 @@ import React from 'react'
 import logo from '../logo.png';
 
 import { useState } from 'react';
-// import { update } from '@tensorflow/tfjs-layers/dist/variables';
 
+
+    
 export default function ContinuePage() {
     const [name, setName]=useState('')
     const [updated, setUpated]=useState('')
@@ -11,14 +12,19 @@ export default function ContinuePage() {
     const handleChange = (e) => {
         setName(e.target.value)
     }
-    const handleClick =() => {
+
+    const handleClick = () => {
         setUpated(name)
     }
     return (
         <div>
             <header className="App-header">
-                <img  src={logo}  className="App-logo" alt="logo" />
+                <img  src={logo}  className="ceaf-logo" alt="logo" />
                 <form>
+                    <label style={{fontSize: 20}}className="label-descr">
+                        enter your name to contact mC_analyticAi about getting a CEAF account
+                    </label>
+                    <div></div>
                     <label>
                         Name:
                     </label>
@@ -32,9 +38,10 @@ export default function ContinuePage() {
                     <button onClick={handleClick}>Submit</button>
                 </form>
             </header>
-
-            <h2>Name: {name}</h2>
-            <h2>Updated: {updated}</h2>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
         </div>
     )
 }
