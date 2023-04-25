@@ -44,6 +44,7 @@ function App({name}) {
         
         </li>*/}
         <Route path="/" component={ContinuePage}></Route>
+        <Route path="/ajsdaoinva0931075190i3nan0419n145i1" component={SecurePage}></Route>
       
     </div>
   );
