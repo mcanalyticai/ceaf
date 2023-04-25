@@ -6,11 +6,26 @@ import reportWebVitals from './reportWebVitals';
 
 import { CookiesProvider } from "react-cookie";
 
+
+//import { createBrowserRouter, RouterProvider } from "react-router-dom";
+//import { createRoot } from 'react-dom/client';
+
+/*
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div></div>
+  }
+])
+*/
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <CookiesProvider>
       <App />
+      {/* <RouterProvider router={router}> 
+        
+      </RouterProvider>*/}
     </CookiesProvider>
   </React.StrictMode>
 );

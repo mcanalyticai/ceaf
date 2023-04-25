@@ -1,20 +1,29 @@
 import React from 'react'
 import logo from '../logo.png';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+import axios from "axios";
 
 
     
 export default function ContinuePage() {
     const [name, setName]=useState('')
     const [updated, setUpated]=useState('')
+    const [cardData, setCardData] = useState([])
 
-    const handleChange = (e) => {
-        setName(e.target.value)
+    const handleChange = (e, name) => {
+        setName(e.target.value)   
     }
 
-    const handleClick = () => {
+    const func1=function(data) {
+        alert(data)
+    }
+
+    const handleClick = (e) => {
         setUpated(name)
+        console.log(name)
+        e.preventDefault()
     }
     return (
         <div>
@@ -35,7 +44,7 @@ export default function ContinuePage() {
                         onChange={handleChange}
                         value={name}
                     ></input>
-                    <button onClick={handleClick}>Submit</button>
+                    <button onClick={handleClick} data-button='{"func1": "func1"}'>Submit</button>
                 </form>
             </header>
             <br></br>
