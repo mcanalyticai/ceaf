@@ -1,1 +1,1 @@
-CEAF - communication for the future
+CEAF - secure communication
